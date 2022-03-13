@@ -29,7 +29,6 @@ func main() {
 
 	var res *echo.Response
 	req := echo.NewRequest()
-	req.Message = "Test Message"
 	i := 0
 	for {
 		select {
