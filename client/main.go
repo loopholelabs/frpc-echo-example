@@ -12,12 +12,12 @@ import (
 )
 
 func main() {
-	c, err := echo.NewClient("127.0.0.1:8080", nil, nil)
+	c, err := echo.NewClient(nil, nil)
 	if err != nil {
 		panic(err)
 	}
 
-	err = c.Connect()
+	err = c.Connect("127.0.0.1:8080")
 	if err != nil {
 		panic(err)
 	}

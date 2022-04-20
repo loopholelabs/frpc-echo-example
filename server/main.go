@@ -17,11 +17,11 @@ func (s *svc) Echo(_ context.Context, req *echo.Request) (*echo.Response, error)
 }
 
 func main() {
-	s, err := echo.NewServer(new(svc), "0.0.0.0:8080", nil, nil)
+	s, err := echo.NewServer(new(svc), nil, nil)
 	if err != nil {
 		panic(err)
 	}
-	err = s.Start()
+	err = s.Start("0.0.0.0:8080")
 	if err != nil {
 		panic(err)
 	}
