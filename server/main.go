@@ -2,7 +2,7 @@ package main
 
 import (
 	"context"
-	echo "go.buf.build/loopholelabs/frisbee/loopholelabs/echo-example"
+	echo "go.buf.build/loopholelabs/frpc/loopholelabs/echo-example"
 	"os"
 	"os/signal"
 	"syscall"

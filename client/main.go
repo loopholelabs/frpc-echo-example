@@ -3,7 +3,7 @@ package main
 import (
 	"context"
 	"fmt"
-	echo "go.buf.build/loopholelabs/frisbee/loopholelabs/echo-example"
+	echo "go.buf.build/loopholelabs/frpc/loopholelabs/echo-example"
 	"log"
 	"os"
 	"os/signal"
